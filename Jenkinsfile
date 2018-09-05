@@ -7,11 +7,15 @@ tools {
         
     }
 	stages{
-		stage('GIT Clone'){
+		stage('Build'){
 			steps{
-				sh 'mvn -version'
+#				sh 'mvn -version'
 				sh 'mvn clean install'
-				
+			}	
+		}
+		stage('Sonar'){
+			steps{
+				sh 'mvn sonar:sonar'
 			}	
 		}
 	}
