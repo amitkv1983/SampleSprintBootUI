@@ -8,7 +8,7 @@ tools {
 	stages{
 		stage('GIT Clone'){
 			steps{
-				sh "mvn clean install"
+				sh 'mvn clean install'
 				
 			}	
 		}
