@@ -4,7 +4,10 @@ pipeline {
 	stages{
 		stage('GIT Clone'){
 			steps{
-				pwd
+				step{
+					pwd
+				}
+				
 			}	
 		}
 	}
