@@ -16,6 +16,7 @@ tools {
 			steps{
 				sh 'mvn sonar:sonar'
 			}
+		}
 		stage('clover'){
 			steps{
 			sh "mvn clean clover:setup test clover:aggregate clover:clover"
@@ -29,6 +30,6 @@ tools {
 				  ])
 			}
 		}
-		}
+		
 	}
 }
