@@ -3,9 +3,7 @@ pipeline {
 
 	stages{
 		stage('GIT Clone'){
-			steps{
-				echo "GIT Clone stage sample text "
-			}
+				echo "Test"
 		}
 	}
 }
