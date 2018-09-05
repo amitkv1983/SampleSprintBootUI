@@ -3,7 +3,9 @@ pipeline {
 
 	stages{
 		stage('GIT Clone'){
-				echo "Test"
+			steps{
+				pwd
+			}	
 		}
 	}
 }
