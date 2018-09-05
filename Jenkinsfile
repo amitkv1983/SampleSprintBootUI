@@ -4,7 +4,7 @@ pipeline {
 	stages{
 		stage('GIT Clone'){
 			steps{
-				echo "test"
+				mvn clean install
 				
 			}	
 		}
